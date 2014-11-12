@@ -1,6 +1,6 @@
 HoudiniClip
 ===========
-Add useful data to clipboard and read it another Houdini session.
+Add useful data to clipboard and read it another Houdini session. More feachers will add later.
 
 - Copy/Paste Bundles to clipboard
 
