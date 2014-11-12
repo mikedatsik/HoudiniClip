@@ -9,7 +9,8 @@ def getBundles():
 
 		bdl_names = dict['bundles'].keys()
 
-		for x in range(0, len(bdl_names)):
+		# Add node (if exist) in new scene to bundle
+ 		for x in range(0, len(bdl_names)):
 			name = bdl_names[x]
 			nodes = dict['bundles'][name]
 			if hou.nodeBundle(name):
@@ -41,6 +42,7 @@ def pasteBundles():
 	bundle_pattern = []
 	bundle_filter = []
 
+	# Add bundles nodes to dictionary
 	for bdl in hou.nodeBundles():
 	    bundle_pattern.append( bdl.pattern())
 	    bundle_filter.append( bdl.filter())
