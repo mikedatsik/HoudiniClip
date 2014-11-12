@@ -29,6 +29,8 @@ def getBundles():
 			pattern = dict['bundle_pattern'][x]
 			bdl.setPattern(pattern)    
 
+			# TODO: Add filter support
+
 			# Set filters
 			# filter =  dict['bundle_filter'][x]
 			# bdl.setFilter(filter)
